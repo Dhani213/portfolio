@@ -1,0 +1,272 @@
+/* ===============================
+   RESET & BASE STYLES
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+/* ===============================
+   COLOR VARIABLES
+================================ */
+
+:root {
+    --black: #1a1a1a;
+    --white: #ffffff;
+    --gray-light: #f5f5f5;
+    --gray-medium: #666666;
+    --gray-dark: #333333;
+    --blue: #2563eb;
+    --blue-hover: #1d4ed8;
+}
+
+/* ===============================
+   CONTAINER
+================================ */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: var(--gray-dark);
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.hero-title {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    color: var(--gray-medium);
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin-bottom: 30px;
+    color: var(--gray-medium);
+}
+
+.btn-primary {
+    background: var(--blue);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background: var(--blue-hover);
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-alt {
+    background: var(--gray-light);
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+/* ===============================
+   ABOUT
+================================ */
+
+.about-text {
+    max-width: 700px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   SKILLS
+================================ */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.skill-category-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.skill-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+}
+
+/* ===============================
+   PROJECTS
+================================ */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    border: 1px solid #e5e5e5;
+    padding: 30px;
+    background: var(--white);
+}
+
+.project-card:hover {
+    border-color: var(--blue);
+}
+
+.project-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    color: var(--gray-dark);
+}
+
+/* ===============================
+   CONTACT
+================================ */
+
+.contact-intro {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-link {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+}
+
+.contact-link:hover .contact-value {
+    color: var(--blue);
+}
+
+.contact-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--gray-medium);
+}
+
+.contact-value {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+.footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 30px 0;
+    text-align: center;
+    color: var(--gray-medium);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+}
