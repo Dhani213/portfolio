@@ -1,138 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhani - Front-End Developer</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhani | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="container">
-            <div class="nav-content">
-                <a href="#" class="logo">DD</a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+<!-- NAVBAR -->
+<nav class="nav">
+    <h2 class="logo">Dhani</h2>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Hi, I'm <span>Dhani</span></h1>
+    <p id="typing"></p>
+    <a href="#projects" class="btn">View Work</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>I am a passionate frontend developer skilled in HTML, CSS, JavaScript, C, and Python. I love building responsive and interactive web applications.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">C</div>
+        <div class="skill">Python</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>01 Portfolio</h3>
+            <p>Modern responsive portfolio website</p>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Dhani</h1>
-                <p class="hero-subtitle">Front-End Developer (Beginner)</p>
-                <p class="hero-description">
-                    I am learning front-end development and building simple, clean, and responsive websites using HTML and CSS.
-                </p>
-                <a href="#contact" class="btn-primary">Get In Touch</a>
-            </div>
+        <div class="card">
+            <h3>02 To-Do App</h3>
+            <p>Task manager using JavaScript</p>
+            <a href="https://dhani213.github.io/to-do-list/" target="_blank">View</a>
         </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="about-text">
-                Hi, I'm Dhani. I am a beginner front-end developer who is passionate about learning web development.
-            </p>
-            <p class="about-text">
-                I enjoy creating simple websites and improving my skills step by step every day.
-            </p>
+        <div class="card">
+            <h3>03 Rock Paper Scissors</h3>
+            <p>Interactive browser game</p>
+            <a href="https://dhani213.github.io/rock-paper-scissors-js/" target="_blank">View</a>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Languages</h3>
-                    <ul class="skill-list">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Practices</h3>
-                    <ul class="skill-list">
-                        <li>Responsive Design</li>
-                        <li>Web Accessibility</li>
-                        <li>Performance Optimization</li>
-                        <li>Cross-Browser Compatibility</li>
-                    </ul>
-                </div>
-            </div>
-
+        <div class="card">
+            <h3>04 QR Generator</h3>
+            <p>QR code generator using Python</p>
+            <a href="https://dhani213.github.io/python-qr-code-generator/" target="_blank">View</a>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
+    </div>
+</section>
 
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3 class="project-title">My First Portfolio Website</h3>
-                    <p class="project-description">
-                        This is my first project created using HTML and CSS.
-                        I built this portfolio to practice my skills and start my journey in web development.
-                    </p>
-                    <p class="project-description">
-                        Every expert was once a beginner — this is just the beginning 🚀
-                    </p>
-                </article>
-            </div>
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+    <h2>Contact</h2>
+    <p>Email: dhingradhani91@gmail.com</p>
+</section>
 
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-
-            <p class="contact-intro">
-                Feel free to reach out to me for learning opportunities or collaboration.
-            </p>
-
-            <div class="contact-links">
-                <a href="mailto:dhingradhani91@gmail.com" class="contact-link">
-                    <span class="contact-label">Email</span>
-                    <span class="contact-value">dhingradhani91@gmail.com</span>
-                </a>
-
-                <a href="https://www.linkedin.com/in/dhani-dhingra-13a882385" target="_blank" class="contact-link">
-                    <span class="contact-label">LinkedIn</span>
-                    <span class="contact-value">linkedin.com/in/dhani-dhingra</span>
-                </a>
-
-                <a href="https://github.com/Dhani213" target="_blank" class="contact-link">
-                    <span class="contact-label">GitHub</span>
-                    <span class="contact-value">github.com/Dhani213</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">© 2025 Dhani. All rights reserved.</p>
-        </div>
-    </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
